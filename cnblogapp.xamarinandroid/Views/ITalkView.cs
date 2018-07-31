@@ -1,0 +1,22 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+using Android.App;
+using Android.Content;
+using Android.OS;
+using Android.Runtime;
+using Android.Views;
+using Android.Widget;
+using cnblogapp.xamarinandroid.ViewModels;
+
+namespace cnblogapp.xamarinandroid.Views
+{
+    public interface ITalkView
+    {
+        void GetServiceTalkSuccess(List<TalkModel> list);
+        void GetLocalTalkSuccess(List<TalkModel> list);
+        void GetServiceTalkFail(string error);
+    }
+}
